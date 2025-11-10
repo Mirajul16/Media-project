@@ -1,39 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
-    <title>Website Design</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web design</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <h1 style="color:red">This is My personal Website</h1>
+    <div class="main-container"> 
+        
+        <header class="profile-card">
+            <p class="designer-role">Website Design</p>
+            
+            <div class="profile-pic-wrapper">
+                <img src="sample.jpg" alt="Profile Picture" class="profile-pic"> 
+            </div>
+            
+            <h2 class="profile-name">Md.Mirajul Islam<sub>Designer</sub></h2> 
+        </header>
+        
+        <hr class="divider"> 
 
-    <!-- Image -->
-    <h2 style="color:Purple">Designer</h2>
-    <img src="sample.jpg" alt="Sample Image" width="500">
-
-    <!-- Audio -->
-    <h2 style="color:red">Jontrona</h2>
-    <audio controls>
-        <source src="audio.mp3" type="audio/mpeg">
-		 <source src="audio1.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <!-- Video -->
-    <h2 style="color:red">Song</h2>
-    <video width="700" controls>
+        <main class="content-section">
+            <div class="media-box">
+                <h3 class="media-title">Music</h3>
+                <audio controls class="audio-player">
+                    <source src="audio1.mp3" type="audio/mpeg"> 
+                    I am  Beginner in Html!
+                </audio>
+            </div>
+ <!-- Video -->
+    <h2>Video</h2>
+    <video width="400" controls>
         <source src="videp.mp4" type="video/mp4">
-        “I am a beginner in HTML!!
+        This is too Much hard!
     </video>
-
-    <!-- Button with JS -->
-    <h2>Welcome </h2>
-    <button onclick="showMessage()">Tap Me</button>
-    <p id="message"></p>
-
-    <script src="script.js"></script>
+            <div class="button-area">
+                <button class="tap-me-button">Welcome</button>
+            </div>
+        </main>
+    </div>
 </body>
-
 </html>
-
